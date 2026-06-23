@@ -1,0 +1,1459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REFURBITY - AI powered eCommerce Platform</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="static/assets/images/logo/vicon.jpg" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="/static/assets/css/style-prefix.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <script src="static/assets/js/theme.js"></script>
+</head>
+
+<body>
+
+
+  <div class="overlay" data-overlay></div>
+
+  <!--
+    - MODAL
+  -->
+<div id="news">
+  <div class="modal closed" data-modal>
+
+    <div class="modal-close-overlay" data-modal-overlay></div>
+
+    <div class="modal-content">
+
+      <button class="modal-close-btn" data-modal-close>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="newsletter-img">
+        
+      </div>
+
+      <div class="newsletter">
+
+        <form action="#" >
+
+          <div class="newsletter-header">
+
+            <h1 class="newsletter-title">Login/Register as:</h1>
+
+            
+            <label for="role">Select Role</label>
+                
+          </div>
+
+         
+
+          <a href="bloginpage.html" class="btn-newsletter">Buyer</a>
+          <p><center>or</center></p>
+          <a href="sloginpage.html" class="btn-newsletter">Seller</a>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+
+
+
+  <!--
+    - NOTIFICATION TOAST
+  -->
+
+
+
+
+
+  <!--
+    - HEADER
+  -->
+
+  <header>
+
+    <div class="header-top">
+
+      <div class="container">
+
+        <ul class="header-social-container">
+
+          <li>
+            <a href="https://www.facebook.com/share/TDZ5vUGerE2A8cWm/" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://x.com/Refurbity_7?t=VgjhXR9jEVh3hELizo0apA&s=08" class="social-link">
+              <img src="static/assets/images/twitter-x.svg" alt="twitter" class="twit"> <!-- Temporary placeholder -->
+            </a>
+          </li>
+          
+
+          <li>
+            <a href="https://www.instagram.com/refurbity/profilecard/?igsh=MXc4ejVkM2dnaHo2Zg==" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/in/refurbity-marketplace-7a9260334?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="header-alert-news">
+        
+
+        <div class="header-top-actions">
+
+          <select name="currency">
+
+            <option value="usd">USD &dollar;</option>
+            <option value="eur">EUR &euro;</option>
+
+          </select>
+
+          <select name="language">
+
+            <option value="en-US">English</option>
+            <option value="es-ES">Espa&ntilde;ol</option>
+            <option value="fr">Fran&ccedil;ais</option>
+
+          </select>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="header-main">
+
+      <div class="container">
+
+        <a href="#" class="header-logo">
+          <img src="static/assets/images/logo/1.gif" alt="Refurbity's logo" width="120" height="120">
+        </a>
+
+        <div class="header-search-container">
+
+          <input type="search" name="search" class="search-field" placeholder="Enter your product name...">
+
+          <button class="camera-btn">
+            <img src="static/assets/images/camera.svg" alt="Camera" class="camera-icon">
+         </button>
+         <button class="search-btn">
+            <img src="static/assets/images/search.svg" alt="search">
+          </button>
+          
+
+        </div>
+
+        <div class="header-user-actions">
+
+          <button class="action-btn">
+            <ion-icon name="person-outline"></ion-icon>
+          </button>
+
+         
+
+          <button class="action-btn" id="cart">
+            <ion-icon name="bag-handle-outline"></ion-icon>
+            <span class="count" id="item-count">0</span>
+          </button>
+
+        
+
+          <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Switch theme">
+            <span class="toggle-icon">🌙</span>
+            <span class="toggle-label">Dark</span>
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <nav class="desktop-navigation-menu">
+
+      <div class="container">
+
+        <ul class="desktop-menu-category-list">
+
+          <li class="menu-category">
+            <a href="index.html" class="menu-title">Home</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Mobile Accessories</a>
+
+            <div class="dropdown-panel">
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Type</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">iPhones</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Smartphones</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Basic phones</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Tablets</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">iPads</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">View All</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="static/assets/images/electronics-banner-1.jpg" alt="headphone collection" width="250"
+                      height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Brand</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Apple</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Samsung</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Vivo</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Oppo</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Motorolo</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Redmi</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Realme</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">View All</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="static/assets/images/mens-banner.jpg" alt="men's fashion" width="250" height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Audio Accessories</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">TWS (True Wireless Stereo Buds)</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Neckband</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Headphones</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Earphones</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Bluetooth & Portable Speakers</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">View All</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="static/assets/images/womens-banner.jpg" alt="women's fashion" width="250" height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Apple Accessories</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Apple Watch</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Airpods</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Airpods Max</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Airtags</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">View All</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="static/assets/images/electronics-banner-2.jpg" alt="mouse collection" width="250" height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+          </li>
+          <li class="menu-category">
+            <a href="#" class="menu-title">Laptop Accessories</a>
+
+            <div class="dropdown-panel">
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">OS</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Windows</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Mac</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Linux</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">View All</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="static/assets/images/electronics-banner-1.jpg" alt="headphone collection" width="250"
+                      height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Brand</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Apple</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">HP</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Asus</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">MSI</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Lenova</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Dell</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Acer</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">View All</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="static/assets/images/mens-banner.jpg" alt="men's fashion" width="250" height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Gaming Cansoles</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">PS4 (PlayStation)</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">PS5 (PlayStation)</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">PS3</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">XBox Series X</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">XBox One S</a>
+                </li> 
+
+                <li class="panel-list-item">
+                  <a href="#">XBox One </a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Nintendo (Switch)</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">View All</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="static/assets/images/womens-banner.jpg" alt="women's fashion" width="250" height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Apple Accessories</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Apple Watch</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Airpods</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Airpods Max</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Airtags</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">View All</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="static/assets/images/electronics-banner-2.jpg" alt="mouse collection" width="250" height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Appliances</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Television </a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Air conditioner</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Refridgerator</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Microwave Oven</a>
+              </li>
+              <li class="dropdown-item">
+                <a href="#">View All</a>
+              </li>
+
+            </ul>
+          </li>
+
+        
+          <li class="menu-category">
+            <a href="#" class="menu-title">Gaming consoles</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">PS4</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">PS5 & PS3</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">XBox Series X</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">XBox One & XBox One S</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Nintendo (Switch)</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">View All</a>
+              </li>
+
+            </ul>
+          </li>
+         
+          <li class="menu-category">
+            <a href="#" class="menu-title">Others</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Smart Watches</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Smart Bands</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Smart Watch Charger</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">PowerBank & Charger</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">View All</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#"></a>
+              </li>
+
+            </ul>
+          </li>
+         
+
+          <li class="menu-category">
+            <a href="#" class="menu-title login-btn">Login</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+    <div class="mobile-bottom-navigation">
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="bag-handle-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="home-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="heart-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="grid-outline"></ion-icon>
+      </button>
+
+    </div>
+
+    <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+
+      <div class="menu-top">
+        <h2 class="menu-title">Menu</h2>
+
+        <button class="menu-close-btn" data-mobile-menu-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="mobile-menu-category-list">
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Home</a>
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Mobile Accessories</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Type</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Brand</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Audio Accessories</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Apple Accessories</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Appliances</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Dress & Frock</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Earrings</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Necklace</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Makeup Kit</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Others</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Earrings</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Couple Rings</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Necklace</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Bracelets</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Login</a>
+        </li>
+
+      </ul>
+
+      <div class="menu-bottom">
+
+        <ul class="menu-category-list">
+
+          <li class="menu-category">
+
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Language</p>
+
+              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">English</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Espa&ntilde;ol</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Fren&ccedil;h</a>
+              </li>
+
+            </ul>
+
+          </li>
+
+          <li class="menu-category">
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Currency</p>
+              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">USD &dollar;</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">EUR &euro;</a>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+
+        <ul class="menu-social-container">
+
+          <li>
+            <a href="https://www.facebook.com/share/TDZ5vUGerE2A8cWm/" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://x.com/Refurbity_7?t=VgjhXR9jEVh3hELizo0apA&s=08" class="social-link">
+              <ion-icon name="logo-xing"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/refurbity/profilecard/?igsh=MXc4ejVkM2dnaHo2Zg==" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/in/refurbity-marketplace-7a9260334?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+
+
+
+  <!--
+    - MAIN
+  -->
+
+  <main style="display: flex; justify-content: center; align-items: center;">
+     <!--
+      - chatbot
+    -->
+
+
+    <!--
+      - BANNER
+    -->
+
+    <!--
+      - CATEGORY brands
+    -->
+
+    <!--
+      - PRODUCT
+    -->
+
+    <div class="product-container">
+
+      <div class="container">
+
+
+        <!--
+          - SIDEBAR
+        -->
+
+    
+        <div class="product-box">
+
+          <!--
+            - PRODUCT MINIMAL
+          -->
+
+      
+
+
+          <!--
+            - PRODUCT FEATURED Deal
+          -->
+
+          <div class="pro-featured"><br>
+
+            <h1 class="title">Shopping Cart</h1>
+
+            <div class="case">
+
+              <div class="showcase-container">
+
+                <div class="show" id="cart-popup">
+                  <!-- Cart Items will be added here dynamically -->
+               
+                  <p id="popup-title">Cart Items</p>
+                  <div id="checkout-items"> </div>
+                       <br>
+                       <b> <p id="total">Total Price: ₹<span id="total-amount">0</span></p></b>
+                        <div id="checkout"> <p>Checkout</p></div>
+                    </div></div>
+
+                  
+                  </div>
+
+                </div>
+
+              </div>
+
+
+            </div>
+
+          </div>
+
+
+
+          <!--
+            - PRODUCT GRID New Prod
+          -->
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - TESTIMONIALS, CTA & SERVICE
+    -->
+
+    <div>
+
+      <div class="container">
+
+        <div class="testimonials-box">
+
+          <!--
+            - TESTIMONIALS
+          -->
+
+   
+
+
+          <!--
+            - CTA
+          -->
+
+
+          <!--
+            - SERVICE
+          -->
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - BLOG
+    -->
+
+
+  </main>
+
+
+
+
+
+  <!--
+    - FOOTER
+  -->
+
+  <footer>
+
+    <div class="footer-category">
+
+      <div class="container">
+
+        <h2 class="footer-category-title">Brand directory</h2>
+
+        <div class="footer-category-box">
+
+          <h3 class="category-box-title">iPhones :</h3>
+
+          <a href="#" class="footer-category-link">iPhone 14</a>
+          <a href="#" class="footer-category-link">iPhone 13</a>
+          <a href="#" class="footer-category-link">iPhone 12</a>
+          <a href="#" class="footer-category-link">iPhone 11</a>
+          <a href="#" class="footer-category-link">iPhone SE(2022)</a>
+          <a href="#" class="footer-category-link">iPhone X</a>
+          <a href="#" class="footer-category-link">iPhone XR</a>
+          <a href="#" class="footer-category-link">See all</a>
+
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Samsung Galaxy :</h3>
+        
+          <a href="#" class="footer-category-link">Galaxy S23 Series</a>
+          <a href="#" class="footer-category-link">Galaxy S22 Series</a>
+          <a href="#" class="footer-category-link">Galaxy S21 Series</a>
+          <a href="#" class="footer-category-link">Galaxy Note Series</a>
+          <a href="#" class="footer-category-link">Galaxy Z Fold Series</a>
+          <a href="#" class="footer-category-link">Galaxy Z Flip Seriess</a>
+          <a href="#" class="footer-category-link">See All</a>
+         
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Google Pixel :</h3>
+        
+          <a href="#" class="footer-category-link">Google Pixel 7 Series</a>
+          <a href="#" class="footer-category-link">Google Pixel 6 Series</a>
+          <a href="#" class="footer-category-link">Google Pixel 5 Series</a>
+          <a href="#" class="footer-category-link">Google Pixel 4 Series</a>
+          <a href="#" class="footer-category-link">See All</a>
+         
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">More Brands :</h3>
+        
+          <a href="#" class="footer-category-link">One Plus</a>
+          <a href="#" class="footer-category-link">Motorola</a>
+          <a href="#" class="footer-category-link">Nokia</a>
+          <a href="#" class="footer-category-link">Oppo</a>
+          <a href="#" class="footer-category-link">Redmi</a>
+          <a href="#" class="footer-category-link">Xiami</a>
+          <a href="#" class="footer-category-link">Realme</a>
+          <a href="#" class="footer-category-link">See All</a>
+          
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">MacBook :</h3>
+        
+          <a href="#" class="footer-category-link">MacBook Pro</a>
+          <a href="#" class="footer-category-link">MacBook Air</a>
+          <a href="#" class="footer-category-link">MacBook</a>
+          <a href="#" class="footer-category-link">MacBook M1 series</a>
+          <a href="#" class="footer-category-link">MacBook M2 series</a>
+          <a href="#" class="footer-category-link">See all</a>
+          
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Windows laptops :</h3>
+        
+          <a href="#" class="footer-category-link">Acer</a>
+          <a href="#" class="footer-category-link">Dell</a>
+          <a href="#" class="footer-category-link">HP</a>
+          <a href="#" class="footer-category-link">Lenova</a>
+          <a href="#" class="footer-category-link">Samsung</a>
+          <a href="#" class="footer-category-link">Toshiba</a>
+          <a href="#" class="footer-category-link">See All</a>
+          
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">iPad :</h3>
+        
+          <a href="#" class="footer-category-link">iPad Air series</a>
+          <a href="#" class="footer-category-link">iPad Pro series</a>
+          <a href="#" class="footer-category-link">iPad Mini series</a>
+          <a href="#" class="footer-category-link">iPad series</a>
+          <a href="#" class="footer-category-link">See All</a>
+               
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Samsung Galaxy Tab :</h3>
+        
+          <a href="#" class="footer-category-link">Galaxy Tab S Series</a>
+          <a href="#" class="footer-category-link">Galaxy Tab A Series</a>
+          <a href="#" class="footer-category-link">Galaxy Tab E Series</a>
+          <a href="#" class="footer-category-link">See All</a>
+          
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Xbox :</h3>
+        
+          <a href="#" class="footer-category-link">Xbox One</a>
+          <a href="#" class="footer-category-link">Xbox One S</a>
+          <a href="#" class="footer-category-link">Xbox One X</a>
+          <a href="#" class="footer-category-link">Xbox Series S</a>
+          <a href="#" class="footer-category-link">Xbox Series X</a>
+          <a href="#" class="footer-category-link">See All</a>
+               
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Nintendo :</h3>
+        
+          <a href="#" class="footer-category-link">Nintendo Switch</a>
+          <a href="#" class="footer-category-link">Nintendo Wii</a>
+          <a href="#" class="footer-category-link">Nintendo 3Ds</a>
+          <a href="#" class="footer-category-link">Nintendo Game Boy</a>
+          <a href="#" class="footer-category-link">See All</a>
+               
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">PlayStation :</h3>
+        
+          <a href="#" class="footer-category-link">PlayStation 5</a>
+          <a href="#" class="footer-category-link">PlayStation 4</a>
+          <a href="#" class="footer-category-link">PlayStation 3</a>
+          <a href="#" class="footer-category-link">PSP</a>
+          <a href="#" class="footer-category-link">See All</a>
+               
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Apple Watch :</h3>
+        
+          <a href="#" class="footer-category-link">Apple watch series 8</a>
+          <a href="#" class="footer-category-link">Apple watch series 7</a>
+          <a href="#" class="footer-category-link">Apple watch series 6</a>
+          <a href="#" class="footer-category-link">Apple watch series 5</a>
+          <a href="#" class="footer-category-link">Apple watch SE series</a>
+          <a href="#" class="footer-category-link">Apple watch Ultra</a>
+          <a href="#" class="footer-category-link">See All</a>
+               
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">More Brands :</h3>
+        
+          <a href="#" class="footer-category-link">Galaxy Watch</a>
+          <a href="#" class="footer-category-link">Google</a>
+          <a href="#" class="footer-category-link">Fitbit</a>
+          <a href="#" class="footer-category-link">Amazfit</a>
+          <a href="#" class="footer-category-link">See All</a>
+          </div>
+          <div class="footer-category-box">
+            <h3 class="category-box-title">Airpods :</h3>
+          
+            <a href="#" class="footer-category-link">Airpods series</a>
+            <a href="#" class="footer-category-link">Airpods Pro series</a>
+            <a href="#" class="footer-category-link">Airpods Max series</a>
+            <a href="#" class="footer-category-link">Airpods Replacement</a>
+            <a href="#" class="footer-category-link">HomePod</a>
+            <a href="#" class="footer-category-link">See All</a>     
+          </div>
+          
+          <div class="footer-category-box">
+            <h3 class="category-box-title">Earphones :</h3>
+          
+            <a href="#" class="footer-category-link">Bose</a>
+            <a href="#" class="footer-category-link">Plantronics</a>
+            <a href="#" class="footer-category-link">Samsung</a>
+            <a href="#" class="footer-category-link">Others</a>
+            <a href="#" class="footer-category-link">See All</a>
+                 
+          </div>
+          
+          <div class="footer-category-box">
+            <h3 class="category-box-title">Headphones :</h3>
+          
+            <a href="#" class="footer-category-link">AKG</a>
+            <a href="#" class="footer-category-link">Bose</a>
+            <a href="#" class="footer-category-link">Jabra</a>
+            <a href="#" class="footer-category-link">JBL</a>
+            <a href="#" class="footer-category-link">Skull Candy</a>
+            <a href="#" class="footer-category-link">See All</a>
+                 
+          </div>
+
+          <div class="footer-category-box">
+            <h3 class="category-box-title">Speakers :</h3>
+          
+            <a href="#" class="footer-category-link">Amazon Alexa</a>
+            <a href="#" class="footer-category-link">Bose</a>
+            <a href="#" class="footer-category-link">Marshall</a>
+            <a href="#" class="footer-category-link">JBL</a>
+            <a href="#" class="footer-category-link">Ultimate Ears</a>
+            <a href="#" class="footer-category-link">See All</a>
+                 
+          </div>
+               
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="footer-nav">
+
+      <div class="container">
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Follow Us</h2>
+          </li>
+
+          <li>
+            <ul class="social-link">
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <img src="static/assets/images/twitter-x.svg" alt="twitter" class="twitter">
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Products</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Brands</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Best Sellers & New Arrivals</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Trending & Top Rated</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Deal of the Day</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Testimonials</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Brand Directory</a>
+          </li>
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Our Team</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Disha S</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Hirthick S</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Sundhareshwaran R</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Shruthi M</a>
+          </li>
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Contact</h2>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <address class="content">
+              SNS Kalvi Nagar, Sathy Main Road, 
+              Kurumbapalayam, PO, Coimbatore, 
+              Tamil Nadu 641107
+            </address>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <a href="tel:+918015531830" class="footer-nav-link">+91 80155  31830</a> <br><br>
+            <a href="tel:+917904923835" class="footer-nav-link">+91 79049  23835</a>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <a href="mailto:refurbity.official@gamil.com" class="footer-nav-link">refurbity.official@gmail.com</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Follow Us</h2>
+          </li>
+
+          <li>
+            <ul class="social-link">
+
+              <li class="footer-nav-item">
+                <a href="https://www.facebook.com/share/TDZ5vUGerE2A8cWm/" class="footer-nav-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="https://x.com/Refurbity_7?t=VgjhXR9jEVh3hELizo0apA&s=08" class="footer-nav-link">
+                  <img src="static/assets/images/twitter-x.svg" alt="twitter" class="twit"> 
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="https://www.linkedin.com/in/refurbity-marketplace-7a9260334?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="footer-nav-link">
+                  <img src="static/assets/images/twitter-x.svg" alt="twitter">
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="https://www.instagram.com/refurbity/profilecard/?igsh=MXc4ejVkM2dnaHo2Zg==" class="footer-nav-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <div class="container">
+
+        <img src="static/assets/images/payment.png" alt="payment method" class="payment-img">
+
+        <p class="copyright">
+          Copyright &copy; <a href="#">Refurbity</a> all rights reserved.
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="static/assets/js/script.js"></script>
+
+  <script src="static/assets/js/cart.js"></script>
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+ 
+
+  <script src="static/assets/js/products.js"></script>
+  <script src="static/assets/js/search.js"></script>
+</body>
+
+</html>

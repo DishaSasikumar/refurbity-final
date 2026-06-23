@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buyer Login and Sign-Up with OTP Verification</title>
+    <style>
+        .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+        .showcase-wrapper { display: flex; flex-direction: column; }
+        .showcase-container { margin-bottom: 20px; }
+        .title { font-size: 24px; margin-bottom: 10px; }
+        .showcase-content { padding: 10px; }
+        .boxy { width: 100%; padding: 8px; margin: 8px 0; }
+        .add-cart-btn { padding: 10px; cursor: pointer; background-color: #4CAF50; color: white; border: none; }
+        .showcase-link { color: #0066cc; text-decoration: none; }
+        .showcase-links { margin-top: 10px; }
+        .otp-btn { padding: 5px; cursor: pointer; }
+    </style>
+  <script src="static/assets/js/theme.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Product Featured Section -->
+        <div class="product-featured">
+            <h2>Buyer</h2>
+            <div class="showcase-wrapper has-scrollbar">
+
+                <!-- Sign In Form -->
+                <div class="showcase-container" id="signInContainer">
+                    <h3 class="title">Login</h3>
+                    <div class="showcase">
+                        <div class="showcase-content">
+                            <form id="signInForm" onsubmit="return signIn()">
+                                <label for="signinMail">Username/Email :</label>
+                                <input type="email" name="mail" id="mail" placeholder="Enter your email" class="boxy" required>
+
+                                <label for="signinPwd">Password :</label>
+                                <input type="password" name="signinPwd" id="pwd" placeholder="Enter your password" class="boxy" required>
+
+                                <a href="#" class="showcase-link">Forgot Password?</a>
+
+                                <div class="showcase-links">
+                                    <span class="showcase-desc">By continuing, you agree to Refurbity's</span>
+                                    <a href="condition-of-use.html" class="showcase-link">Condition of Use</a> and
+                                    <a href="privacy.html" class="showcase-link">Privacy Notice</a>
+                                </div>
+
+                                <button type="submit" class="add-cart-btn">Sign In</button>
+                                <div class="showcase-links">
+                                    <span class="showcase-desc">New to Refurbity? </span>
+                                    <a href="#signUpContainer" class="showcase-link" onclick="toggleForms()">Sign Up</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sign Up Form -->
+                <div class="showcase-container" id="signUpContainer" style="display: none;">
+                    <h3 class="title">Create an Account</h3>
+                    <div class="showcase">
+                        <div class="showcase-content">
+                            <form id="signUpForm" onsubmit="return signUp()">
+                                <input type="text" name="name" id="username" class="boxy" placeholder="Enter your Username" required>
+                                <input type="email" name="mail" id="email" class="boxy" placeholder="Enter your Email" required>
+
+                                <input type="password" name="signinPwd" id="password" class="boxy" placeholder="Set password" required>
+                                <input type="password" name="csigninPwd" id="confirmPassword" class="boxy" placeholder="Confirm password" required>
+
+                                <input type="text" name="phnno" class="boxy" placeholder="Enter your Phone No" required>
+                                <button type="button" class="otp-btn" onclick="sendOtp()">Send OTP</button>
+
+                                <!-- OTP Input Field for Verification -->
+                                <input type="text" id="otpInput" class="boxy" placeholder="Enter OTP" style="display: none;" required>
+
+                                <div class="showcase-links">
+                                    <span class="showcase-desc">By continuing, you agree to Refurbity's</span>
+                                    <a href="condition-of-use.html" class="showcase-link">Condition of Use</a> and
+                                    <a href="privacy.html" class="showcase-link">Privacy Notice</a>
+                                </div>
+
+                                <button type="submit" class="add-cart-btn">Sign Up</button>
+                                <div class="showcase-links">
+                                    <span class="showcase-desc">Already a Refurbitian?</span>
+                                    <a href="#signInContainer" class="showcase-link" onclick="toggleForms()">Sign In</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript to handle OTP generation and verification -->
+    <script>
+        function toggleForms() {
+            document.getElementById('signInContainer').style.display =
+                document.getElementById('signInContainer').style.display === 'none' ? 'block' : 'none';
+            document.getElementById('signUpContainer').style.display =
+                document.getElementById('signUpContainer').style.display === 'none' ? 'block' : 'none';
+        }
+
+        function signIn() {
+            alert("Sign-In form submitted");
+            return false;
+        }
+
+        function signUp() {
+            const password = document.getElementById("password").value;
+            const confirmPassword = document.getElementById("confirmPassword").value;
+            const otpInput = document.getElementById("otpInput").value;
+            const storedOtp = sessionStorage.getItem("otp");
+
+            if (password !== confirmPassword) {
+                alert("Passwords do not match");
+                return false;
+            }
+
+            if (otpInput !== storedOtp) {
+                alert("Incorrect OTP. Please try again.");
+                return false;
+            }
+
+            alert("Sign-Up form submitted with verified OTP!");
+            sessionStorage.removeItem("otp");
+            return false;
+        }
+
+        function sendOtp() {
+            const otp = Math.floor(100000 + Math.random() * 900000).toString(); // Generate a 6-digit OTP
+            sessionStorage.setItem("otp", otp);
+
+            alert(`OTP sent: ${otp}`); // For demo purposes, show the OTP in an alert
+            document.getElementById("otpInput").style.display = "block"; // Show the OTP input field
+        }
+    </script>
+  <script src="static/assets/js/products.js"></script>
+  <script src="static/assets/js/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<div class="container">
+  <div class="product-featured">
+      <h2>Buyer</h2>
+      <div class="showcase-wrapper has-scrollbar">
+          <!-- Sign In Form -->
+          <div class="showcase-container">
+              <h3 class="title">Login</h3>
+              <div class="showcase">
+                  <div class="showcase-content">
+                      <form id="signInForm" onsubmit="return signIn()">
+                          <label for="signinMail">UserName/Email :</label><br><br>
+                          <input type="email" name="mail" id="signinMail" placeholder="Enter your email" required><br>
+                          <label for="signinPwd">Password :</label><br><br>
+                          <input type="password" name="signinPwd" id="signinPwd" placeholder="Enter your password" required><br>
+                          <button type="submit" class="add-cart-btn">Sign in</button>
+                          <div class="showcase-links">
+                              <span class="showcase-desc">New to Refurbity?</span>
+                              <a href="#signUpForm" class="showcase-link">Sign up</a>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Sign Up Form -->
+          <div class="showcase-container">
+              <h3 class="title">Create an Account</h3>
+              <div class="showcase">
+                  <div class="showcase-content">
+                      <form id="signUpForm" onsubmit="return signUp()">
+                          <input type="text" name="name" id="username" class="boxy" placeholder="Enter your UserName" required><br>
+                          <input type="email" name="mail" id="email" class="boxy" placeholder="Enter your Email" required><br>
+                          <input type="password" name="password" id="password" class="boxy" placeholder="Set password" required><br>
+                          <input type="password" name="confirmPassword" id="confirmPassword" class="boxy" placeholder="Confirm password" required><br>
+                          <button type="submit" class="add-cart-btn">Sign up</button>
+                          <div class="showcase-links">
+                              <span class="showcase-desc">Already a Refurbitian?</span>
+                              <a href="#signInForm" class="showcase-link">Sign in</a>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<script>
+// Function to handle sign-up
+function signUp() {
+  const username = document.getElementById("username").value;
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+  const confirmPassword = document.getElementById("confirmPassword").value;
+
+  if (password !== confirmPassword) {
+      alert("Passwords do not match!");
+      return false;
+  }
+
+  const user = {
+      username,
+      email,
+      password,
+  };
+
+  localStorage.setItem(email, JSON.stringify(user));
+  alert("Sign-up successful! You can now sign in.");
+  return false; // Prevent form from submitting
+}
+
+// Function to handle sign-in
+function signIn() {
+  const email = document.getElementById("signinMail").value;
+  const password = document.getElementById("signinPwd").value;
+
+  const user = JSON.parse(localStorage.getItem(email));
+
+  if (user && user.password === password) {
+      alert("Login successful! Welcome back, " + user.username);
+      // Redirect or show user-specific content
+  } else {
+      alert("Invalid email or password!");
+  }
+
+  return false; // Prevent form from submitting
+}
+</script>

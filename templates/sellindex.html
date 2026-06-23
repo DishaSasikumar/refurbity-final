@@ -1,0 +1,3146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REFURBITY - AI powered eCommerce Platform</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="static/assets/images/logo/vicon.jpg" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="/static/assets/css/style-prefix.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <script src="static/assets/js/theme.js"></script>
+</head>
+
+<body>
+
+
+  <div class="overlay" data-overlay></div>
+
+  <!--
+    - MODAL
+  -->
+<div id="news">
+  <div class="modal closed" data-modal>
+
+    <div class="modal-close-overlay" data-modal-overlay></div>
+
+    <div class="modal-content">
+
+      <button class="modal-close-btn" data-modal-close>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="newsletter-img">
+        
+      </div>
+
+      <div class="newsletter">
+
+        <form action="#" >
+
+          <div class="newsletter-header">
+
+            <h1 class="newsletter-title">Login/Register as:</h1>
+
+            
+            <label for="role">Select Role</label>
+                
+          </div>
+
+         
+
+          <a href="bloginpage.html" class="btn-newsletter">Buyer</a>
+          <p><center>or</center></p>
+          <a href="sloginpage.html" class="btn-newsletter">Seller</a>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+
+
+
+  <!--
+    - NOTIFICATION TOAST
+  -->
+
+  <div class="notification-toast" data-toast>
+
+    <button class="toast-close-btn" data-toast-close>
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+
+    <div class="toast-banner">
+      <img src="static/assets/images/New Arrivals/Apple Headphones.jpg" alt="Rose Gold Earrings" width="80" height="70">
+    </div>
+
+    <div class="toast-detail">
+            
+      <p class="toast-message">
+        Someone in new just bought
+      </p>
+
+      <p class="toast-title">
+        Apple Airpods
+      </p>
+
+      <p class="toast-meta">
+        <time datetime="PT2M">3 Minutes</time> ago
+      </p>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <!--
+    - HEADER
+  -->
+
+  <header>
+
+    <div class="header-top">
+
+      <div class="container">
+
+        <ul class="header-social-container">
+
+          <li>
+            <a href="https://www.facebook.com/share/TDZ5vUGerE2A8cWm/" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://x.com/Refurbity_7?t=VgjhXR9jEVh3hELizo0apA&s=08" class="social-link">
+              <img src="static/assets/images/twitter-x.svg" alt="twitter" class="twit"> <!-- Temporary placeholder -->
+            </a>
+          </li>
+          
+
+          <li>
+            <a href="https://www.instagram.com/refurbity/profilecard/?igsh=MXc4ejVkM2dnaHo2Zg==" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/in/refurbity-marketplace-7a9260334?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="header-alert-news">
+        
+
+        <div class="header-top-actions">
+
+          <select name="currency">
+
+            <option value="usd">USD &dollar;</option>
+            <option value="eur">EUR &euro;</option>
+
+          </select>
+
+          <select name="language">
+
+            <option value="en-US">English</option>
+            <option value="es-ES">Espa&ntilde;ol</option>
+            <option value="fr">Fran&ccedil;ais</option>
+
+          </select>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="header-main">
+
+      <div class="container">
+
+        <a href="#" class="header-logo">
+          <img src="static/assets/images/logo/1.gif" alt="Refurbity's logo" width="120" height="120">
+        </a>
+
+        <div class="header-search-container">
+
+          <input type="search" name="search" class="search-field" placeholder="Enter your product name...">
+
+          <button class="camera-btn">
+            <img src="static/assets/images/camera.svg" alt="Camera" class="camera-icon">
+         </button>
+         <button class="search-btn">
+            <img src="static/assets/images/search.svg" alt="search">
+          </button>
+          
+
+        </div>
+
+        <div class="header-user-actions">
+
+          <button class="action-btn" style="color: black;"><a href="sprofile.html">
+            <ion-icon name="person-outline"></ion-icon></a>
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <nav class="desktop-navigation-menu">
+
+      <div class="container"style="display: flex; justify-content: center; align-items: center;">
+
+        <ul class="desktop-menu-category-list">
+
+          <li class="menu-category">
+            <a href="sellindex.html" class="menu-title">Home</a>
+          </li>
+
+      
+          <li class="menu-category">
+            <a href="sellerprodlist.html" class="menu-title">Your Products</a>
+
+          </li>
+
+          <li class="menu-category">
+            <a href="selleradd.html" class="menu-title">Add Product</a>
+          </li>
+
+        
+          <li class="menu-category">
+            <a href="scontact.html" class="menu-title">Contact Refurbity</a>
+          </li>
+         
+
+          <li class="menu-category">
+            <a href="sloginpage.html" class="menu-title login-btn">Login</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+    <div class="mobile-bottom-navigation">
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="bag-handle-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="home-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="heart-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="grid-outline"></ion-icon>
+      </button>
+
+    </div>
+
+    <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+
+      <div class="menu-top">
+        <h2 class="menu-title">Menu</h2>
+
+        <button class="menu-close-btn" data-mobile-menu-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="mobile-menu-category-list">
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Home</a>
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Mobile Accessories</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Type</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Brand</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Audio Accessories</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Apple Accessories</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Appliances</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Dress & Frock</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Earrings</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Necklace</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Makeup Kit</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Others</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Earrings</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Couple Rings</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Necklace</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Bracelets</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Login</a>
+        </li>
+
+      </ul>
+
+      <div class="menu-bottom">
+
+        <ul class="menu-category-list">
+
+          <li class="menu-category">
+
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Language</p>
+
+              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">English</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Espa&ntilde;ol</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Fren&ccedil;h</a>
+              </li>
+
+            </ul>
+
+          </li>
+
+          <li class="menu-category">
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Currency</p>
+              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">USD &dollar;</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">EUR &euro;</a>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+
+        <ul class="menu-social-container">
+
+          <li>
+            <a href="https://www.facebook.com/share/TDZ5vUGerE2A8cWm/" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://x.com/Refurbity_7?t=VgjhXR9jEVh3hELizo0apA&s=08" class="social-link">
+              <ion-icon name="logo-xing"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/refurbity/profilecard/?igsh=MXc4ejVkM2dnaHo2Zg==" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/in/refurbity-marketplace-7a9260334?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+
+
+
+  <!--
+    - MAIN
+  -->
+
+  <main>
+     <!--
+      - chatbot
+    -->
+
+    <div class="chatbot-icon" onclick="toggleChat()">
+      <img src="static/assets/images/chatbot.png" alt="Chatbot Icon" />
+  </div>
+
+  <div class="chatbox" id="chatbox">
+      <div class="chatbox-header">
+          <h3>Talk to Furby!!</h3>
+          <span class="close-btn" onclick="toggleChat()">&times;</span>
+      </div>
+      <div class="chatbox-body" id="chatbox-body">
+        <!-- Messages will be dynamically added here -->
+    </div>
+    <div class="chatbox-footer">
+      <input type="text" id="messageInput" placeholder="Type a message..." onkeydown="if(event.key === 'Enter') sendMessage()" />
+      <button onclick="sendMessage()">Send</button>
+  </div>
+
+  </div>
+
+    <!--
+      - BANNER
+    -->
+
+    <div class="banner">
+
+      <div class="container">
+
+        <div class="slider-container has-scrollbar">
+
+          <div class="slider-item">
+
+            <img src="static/assets/images/Banners Apple.jpg" alt="women's latest fashion sale" class="banner-img">
+
+            <div class="banner-content">
+
+              <p class="banner-subtitle">Top Sale</p>
+
+              <h2 class="banner-title">Our Most Loved Products</h2>
+
+              <p class="banner-text">
+                starting at ₹ <b>4,999</b>
+              </p>
+
+              <a href="#" class="banner-btn">Shop now</a>
+
+            </div>
+
+          </div>
+
+          <div class="slider-item">
+
+            <img src="static/assets/images/Banners Max.jpg" alt="modern sunglasses" class="banner-img">
+
+            <div class="banner-content">
+
+              <p class="banner-subtitle">Trending accessories</p>
+
+              <h2 class="banner-title">Apple Airpods Max</h2>
+
+              <p class="banner-text">
+                starting at ₹<b>39,900</b>
+              </p>
+
+              <a href="#" class="banner-btn">Shop now</a>
+
+            </div>
+
+          </div>
+
+          <div class="slider-item">
+
+            <img src="static/assets/images/Banner Flip.jpg" alt="new fashion summer sale" class="banner-img">
+
+            <div class="banner-content">
+
+              <p class="banner-subtitle">Sale Offer</p>
+
+              <h2 class="banner-title">New Galaxy Z Flip6 </h2>
+
+              <p class="banner-text">
+                starting at ₹<b>89,999</b>
+              </p>
+
+              <a href="#" class="banner-btn">Shop now</a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - CATEGORY brands
+    -->
+
+    <div class="category">
+
+      <div class="container">
+
+        <div class="category-item-container has-scrollbar">
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="static/assets/images/comp logos/apple.png" alt="apple" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Apple</h3>
+
+                <p class="category-item-amount">(53)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="static/assets/images/comp logos/samsung.jpg" alt="winter wear" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Samsung</h3>
+
+                <p class="category-item-amount">(58)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="static/assets/images/comp logos/bose.png" alt="glasses & lens" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Bose</h3>
+
+                <p class="category-item-amount">(68)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="static/assets/images/comp logos/LG.png" alt="shorts & jeans" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">LG</h3>
+
+                <p class="category-item-amount">(84)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="static/assets/images/comp logos/hp.png" alt="t-shirts" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">HP</h3>
+
+                <p class="category-item-amount">(35)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="static/assets/images/comp logos/canon.jpg" alt="jacket" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Canon</h3>
+
+                <p class="category-item-amount">(16)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="static/assets/images/comp logos/Sony.jpg" alt="watch" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Sony</h3>
+
+                <p class="category-item-amount">(27)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="static/assets/images/comp logos/others.png" alt="hat & caps" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Others</h3>
+
+                <p class="category-item-amount">(139)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - PRODUCT
+    -->
+
+    <div class="product-container">
+
+      <div class="container">
+
+
+        <!--
+          - SIDEBAR
+        -->
+
+        <div class="sidebar  has-scrollbar" data-mobile-menu>
+
+          
+
+          <div class="product-showcase">
+
+            <h3 class="showcase-heading">best sellers</h3>
+
+            <div class="showcase-wrapper">
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="static/assets/images/New Products/Bose Speaker.png" alt="baby fabric shoes" width="75" height="75"
+                      class="showcase-img">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Bose Speaker</h4>
+                    </a>
+
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>$5.00</del>
+                      <p class="price">$4.00</p>
+                    </div>
+                    <div class="action-buttons">
+                      <button id="btn-13" class="btn-add-cart" data-name="Bose Speaker" 
+                      data-price="4.00" 
+                      data-img="static/assets/images/New Products/Bose Speaker.png">Add to Cart</button>
+                      <button class="btn-buy-now">Buy Now</button>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="static/assets/images/New Products/41.png" class="showcase-img"
+                      width="75" height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Alienware Gaming Laptop</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>$17.00</del>
+                      <p class="price">$7.00</p>
+                    </div>
+                    <div class="action-buttons">
+                      <button id="btn-14" class="btn-add-cart" data-name="Alienware Gaming Laptop" data-price="100"data-quantity="1" data-img="static\assets\images\New Products\41.png">Add to Cart</button>
+                      <button class="btn-buy-now">Buy Now</button>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="static/assets/images/New Products/21.png" alt="girls t-shirt" class="showcase-img" width="75"
+                      height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Meta Quest VR Headset</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>$5.00</del>
+                      <p class="price">$3.00</p>
+                    </div>
+                    <div class="action-buttons">
+                      <button id="btn-15" class="btn-add-cart" data-name="Meta Quest VR Headset" data-price="100"data-quantity="1" data-img="static\assets\images\New Products\21.png">Add to Cart</button>
+                      <button class="btn-buy-now">Buy Now</button>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="static/assets/images/New Products/11.png" alt="woolen hat for men" class="showcase-img" width="75"
+                      height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Skullcandy Wireless Earbuds</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>$15.00</del>
+                      <p class="price">$12.00</p>
+                    </div>
+                    <div class="action-buttons">
+                      <button id="btn-16" class="btn-add-cart" data-name="Skullcandy Wireless Earbuds" data-price="100"data-quantity="1" data-img="static\assets\images\New Products\11.png">Add to Cart</button>
+                      <button class="btn-buy-now">Buy Now</button>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="product-box">
+
+          <!--
+            - PRODUCT MINIMAL
+          -->
+
+          <div class="product-minimal">
+
+            <div class="product-showcase">
+
+              <h2 class="title">New Arrivals</h2>
+
+              <div class="showcase-wrapper has-scrollbar">
+
+                <div class="showcase-container">
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="static/assets/images/New Arrivals/Orange watch.png" alt="relaxed short full sleeve t-shirt" width="70" class="showcase-img">
+                    </a>
+                    <button class="btn-favorite">
+                      <i class="fa fa-heart-o heart-icon" aria-hidden="true"></i>
+                    </button>
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">HW8 Ultra Max Series 8 Smartwatch</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Smartwatch</a>
+
+                      <div class="price-box">
+                        <p class="price">$45.00</p>
+                        <del>$12.00</del>
+                      </div>
+                      <!-- Add to Cart and Buy Now Buttons -->
+    <div class="action-buttons">
+      <button id="btn-17" class="btn-add-cart" data-name="HW8 Ultra Max Series 8 Smartwatch" data-price="100"data-quantity="1" data-img="static\assets\images\New Arrivals\Orange watch.png">Add to Cart</button>
+      <button class="btn-buy-now">Buy Now</button>
+    </div>
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+                  
+                    <a href="#" class="showcase-img-box">
+                      <img src="static/assets/images/New Arrivals/Apple16.png" alt="girls pink embro design top" class="showcase-img" width="70">
+                    </a>
+                  
+                    <div class="showcase-content">
+                  
+                      <a href="#">
+                        <h4 class="showcase-title"> iPhone 16 Pro in Rose Gold Titanium </h4>
+                      </a>
+                  
+                      <a href="#" class="showcase-category">Apple</a>
+                  
+                      <div class="price-box">
+                        <p class="price">$61.00</p>
+                        <del>$9.00</del>
+                      </div>
+                      <div class="action-buttons">
+                        <button id="btn-18" class="btn-add-cart" data-name="iPhone 16 Pro in Rose Gold Titanium " data-price="100"data-quantity="1" data-img="static\assets\images\New Arrivals\Apple16.png">Add to Cart</button>
+                        <button class="btn-buy-now">Buy Now</button>
+                      </div>
+                    </div>
+                  
+                  </div>
+
+                  <div class="showcase">
+                  
+                    <a href="#" class="showcase-img-box">
+                      <img src="static/assets/images/New Arrivals/M10_TWS.png" alt="black floral wrap midi skirt" class="showcase-img"
+                        width="70">
+                    </a>
+                  
+                    <div class="showcase-content">
+                  
+                      <a href="#">
+                        <h4 class="showcase-title">TWS Wireless Earbud</h4>
+                      </a>
+                  
+                      <a href="#" class="showcase-category">Airpods</a>
+                  
+                      <div class="price-box">
+                        <p class="price">$76.00</p>
+                        <del>$25.00</del>
+                      </div>
+                      <div class="action-buttons">
+                        <button id="btn-19" class="btn-add-cart" data-name="TWS Wireless Earbud" data-price="100"data-quantity="1" data-img="static\assets\images\New Arrivals\M10_TWS.png">Add to Cart</button>
+                        <button class="btn-buy-now">Buy Now</button>
+                      </div>
+                    </div>
+                  
+                  </div>
+
+                  <div class="showcase">
+                  
+                    <a href="#" class="showcase-img-box">
+                      <img src="static/assets/images/New Arrivals/Nintendo.png" alt="pure garment dyed cotton shirt" class="showcase-img"
+                        width="70">
+                    </a>
+                  
+                    <div class="showcase-content">
+                  
+                      <a href="#">
+                        <h4 class="showcase-title">Nintendo Switch</h4>
+                      </a>
+                  
+                      <a href="#" class="showcase-category">Gaming Console</a>
+                  
+                      <div class="price-box">
+                        <p class="price">$68.00</p>
+                        <del>$31.00</del>
+                      </div>
+                      <div class="action-buttons">
+                        <button id="btn-20" class="btn-add-cart" data-name="Nintendo Switch" data-price="100"data-quantity="1" data-img="static\aassets\images\New Arrivals\Nintendo.png">Add to Cart</button>
+                        <button class="btn-buy-now">Buy Now</button>
+                      </div>
+                    </div>
+                  
+                  </div>
+
+                </div>
+
+                <div class="showcase-container">
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                      <img src="static/assets/images/New Arrivals/Portable_Evaporative_Air_Cooler.png" alt="men yarn fleece full-zip jacket" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="#">
+                        <h4 class="showcase-title">3 In 1 Portable Evaporative Air Cooler</h4>
+                      </a>
+                
+                      <a href="#" class="showcase-category">Appliance</a>
+                
+                      <div class="price-box">
+                        <p class="price">$61.00</p>
+                        <del>$11.00</del>
+                      </div>
+                      <div class="action-buttons">
+                        <button id="btn-21" class="btn-add-cart" data-name="3 In 1 Portable Evaporative Air Cooler" data-price="100"data-quantity="1" data-img="static\assets\images\New Arrivals\Portable_Evaporative_Air_Cooler.png">Add to Cart</button>
+                        <button class="btn-buy-now">Buy Now</button>
+                      </div>
+                    </div>
+                
+                  </div>
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                      <img src="static/assets/images/New Arrivals/Microwave Oven.jpg" alt="mens winter leathers jackets" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="#">
+                        <h4 class="showcase-title">BLACK+DECKER 0.7 cu ft 700W Microwave Oven</h4>
+                      </a>
+                
+                      <a href="#" class="showcase-category">Appliance</a>
+                
+                      <div class="price-box">
+                        <p class="price">$32.00</p>
+                        <del>$20.00</del>
+                      </div>
+                      <div class="action-buttons">
+                        <button id="btn-22" class="btn-add-cart" data-name="BLACK+DECKER 0.7 cu ft 700W Microwave Oven" data-price="100"data-quantity="1" data-img="static\assets\images\New Arrivals\Microwave Oven.jpg">Add to Cart</button>
+                        <button class="btn-buy-now">Buy Now</button>
+                      </div>
+                    </div>
+                
+                  </div>
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                      <img src="static/assets/images/New Arrivals/drone.jpg" alt="mens winter leathers jackets" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="#">
+                        <h4 class="showcase-title">DJI Inspire 3</h4>
+                      </a>
+                
+                      <a href="#" class="showcase-category">Drone</a>
+                
+                      <div class="price-box">
+                        <p class="price">$50.00</p>
+                        <del>$25.00</del>
+                      </div>
+                      <div class="action-buttons">
+                        <button id="btn-23" class="btn-add-cart" data-name="DJI Inspire 3" data-price="100"data-quantity="1" data-img="static\assets\images\New Arrivals\drone.jpg">Add to Cart</button>
+                        <button class="btn-buy-now">Buy Now</button>
+                      </div>
+                    </div>
+                
+                  </div>
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                      <img src="static/assets/images/New Arrivals/Premium_Vector___Air_conditioner.png" alt="better basics french terry sweatshorts" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="#">
+                        <h4 class="showcase-title">Premium Vector Air Conditioner</h4>
+                      </a>
+                
+                      <a href="#" class="showcase-category">Appliance</a>
+                
+                      <div class="price-box">
+                        <p class="price">$20.00</p>
+                        <del>$10.00</del>
+                      </div>
+                      <div class="action-buttons">
+                        <button id="btn-24" class="btn-add-cart" data-name="Premium Vector Air Conditioner" data-price="100"data-quantity="1" data-img="static\assets\images\New Arrivals\Premium_Vector___Air_conditioner.png">Add to Cart</button>
+                        <button class="btn-buy-now">Buy Now</button>
+                      </div>
+                    </div>
+                
+                  </div>
+                
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="product-showcase">
+            
+              <h2 class="title">Trending</h2>
+            
+              <div class="showcase-wrapper  has-scrollbar">
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="static/assets/images/New Arrivals/Anker_Power_Bank.png" alt="running & trekking shoes - white" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Anker Power Bank 622 Magnetic Battery (MagGo)</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Power Bank</a>
+            
+                      <div class="price-box">
+                        <p class="price">$49.00</p>
+                        <del>$15.00</del>
+                      </div>
+            
+                      <div class="action-buttons">
+                        <button id="btn-25" class="btn-add-cart" data-name="Anker Power Bank 622 Magnetic Battery (MagGo)" data-price="100"data-quantity="1" data-img="static\assets\images\New Arrivals\Anker_Power_Bank.png">Add to Cart</button>
+                        <button class="btn-buy-now">Buy Now</button>
+                      </div>
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="static/assets/images/New Arrivals/SonySound Home_Theater.png" alt="trekking & running shoes - black" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Sony 5.2-Channel 4K 3D A/V Bluetooth Theater System</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Home Theatre</a>
+            
+                      <div class="price-box">
+                        <p class="price">$78.00</p>
+                        <del>$36.00</del>
+                      </div>
+            
+                      <div class="action-buttons">
+                        <button id="btn-26" class="btn-add-cart" data-name="Sony 5.2-Channel 4K 3D A/V Bluetooth Theater System" data-price="100"data-quantity="1" data-img="static\assets\images\New Arrivals\SonySound Home_Theater.png">Add to Cart</button>
+                        <button class="btn-buy-now">Buy Now</button>
+                      </div>
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="static/assets/images/New Arrivals/Samsung_Galaxy_S24.png" alt="womens party wear shoes" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Samsung Galaxy S24 Ultra</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Phone</a>
+            
+                      <div class="price-box">
+                        <p class="price">$94.00</p>
+                        <del>$42.00</del>
+                      </div>
+            
+                      <div class="action-buttons">
+                        <button id="btn-27" class="btn-add-cart" data-name="Samsung Galaxy S24 Ultra" data-price="100"data-quantity="1" data-img="static\assets\images\New Arrivals\Samsung_Galaxy_S24.png">Add to Cart</button>
+                        <button class="btn-buy-now">Buy Now</button>
+                      </div>
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="static/assets/images/New Arrivals/Portable_Air_Conditioners.png" alt="sports claw women's shoes" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">TEMEIKE 4-IN-1 Portable Air Conditioner</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Appliance</a>
+            
+                      <div class="price-box">
+                        <p class="price">$54.00</p>
+                        <del>$65.00</del>
+                      </div>
+            
+                      <div class="action-buttons">
+                        <button id="btn-28" class="btn-add-cart" data-name="TEMEIKE 4-IN-1 Portable Air Conditioner" data-price="100"data-quantity="1" data-img="static\assets\images\New Arrivals\Portable_Air_Conditioners.png">Add to Cart</button>
+                        <button class="btn-buy-now">Buy Now</button>
+                      </div>
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="static/assets/images/New Arrivals/Sony_Pro_Cinema_Line.png" alt="air tekking shoes - white" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Sony Pro Cinema Line ILME-FX6 Digital Camcorder</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Camcorder</a>
+            
+                      <div class="price-box">
+                        <p class="price">$52.00</p>
+                        <del>$55.00</del>
+                      </div>
+            
+                      <div class="action-buttons">
+                        <button id="btn-29" class="btn-add-cart" data-name="Sony Pro Cinema Line ILME-FX6 Digital Camcorder" data-price="100"data-quantity="1" data-img="static\assets\images\New Arrivals\Sony_Pro_Cinema_Line.png">Add to Cart</button>
+                        <button class="btn-buy-now">Buy Now</button>
+                      </div>
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="static/assets/images/New Arrivals/HP_Pavilion.png" alt="Boot With Suede Detail" class="showcase-img" width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">HP Pavilion</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Laptop</a>
+            
+                      <div class="price-box">
+                        <p class="price">$20.00</p>
+                        <del>$30.00</del>
+                      </div>
+            
+                      <div class="action-buttons">
+                        <button id="btn-30" class="btn-add-cart" data-name="HP Pavilion" data-price="100"data-quantity="1" data-img="static\assets\images\New Arrivals\HP_Pavilion.png">Add to Cart</button>
+                        <button class="btn-buy-now">Buy Now</button>
+                      </div>
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="static/assets/images/New Arrivals/TWS.png" alt="men's leather formal wear shoes" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Transparent Touch Low Latency TWS Wireless Earbud</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Airpods</a>
+            
+                      <div class="price-box">
+                        <p class="price">$56.00</p>
+                        <del>$78.00</del>
+                      </div>
+            
+                      <div class="action-buttons">
+                        <button id="btn-31" class="btn-add-cart" data-name="Transparent Touch Low Latency TWS Wireless Earbud" data-price="100"data-quantity="1" data-img="static\assets\images\New Arrivals\TWS.png">Add to Cart</button>
+                        <button class="btn-buy-now">Buy Now</button>
+                      </div>
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="static/assets/images/New Arrivals/Samsung_-_TV.png" alt="casual men's brown shoes" class="showcase-img" width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Samsung Neo QLED TV (98-inch)</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Television</a>
+            
+                      <div class="price-box">
+                        <p class="price">$50.00</p>
+                        <del>$55.00</del>
+                      </div>
+            
+                      <div class="action-buttons">
+                        <button id="btn-32" class="btn-add-cart" data-name="Samsung Neo QLED TV (98-inch)" data-price="100"data-quantity="1" data-img="static\assets\images\New Arrivals\Samsung_-_TV.png">Add to Cart</button>
+                        <button class="btn-buy-now">Buy Now</button>
+                      </div>
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+              </div>
+            
+            </div>
+
+            <div class="product-showcase">
+            
+              <h2 class="title">Top Rated</h2>
+            
+              <div class="showcase-wrapper  has-scrollbar">
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="static/assets/images/New Arrivals/PS5.png" alt="pocket watch leather pouch" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">PlayStation 5</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Gaming Consoles</a>
+            
+                      <div class="price-box">
+                        <p class="price">$50.00</p>
+                        <del>$34.00</del>
+                      </div>
+            
+                      <div class="action-buttons">
+                        <button id="btn-35" class="btn-add-cart" data-name="PlayStation 5" data-price="100"data-quantity="1" data-img="static\assets\images\New Arrivals\PS5.png">Add to Cart</button>
+                        <button class="btn-buy-now">Buy Now</button>
+                      </div>
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="static/assets/images/New Arrivals/LG_TV_LED.png" alt="silver deer heart necklace" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">LG 55-inch LED TV</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Television</a>
+            
+                      <div class="price-box">
+                        <p class="price">$84.00</p>
+                        <del>$30.00</del>
+                      </div>
+            
+                      <div class="action-buttons">
+                        <button id="btn-36" class="btn-add-cart" data-name="LG 55-inch LED TV" data-price="100"data-quantity="1" data-img="static\assets\images\New Arrivals\LG_TV_LED.png">Add to Cart</button>
+                        <button class="btn-buy-now">Buy Now</button>
+                      </div>
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="static/assets/images/New Arrivals/Pinkwatch.png" alt="titan 100 ml womens perfume" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title"> Amazfit GTS 2e Smart Watch</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Smart Watch</a>
+            
+                      <div class="price-box">
+                        <p class="price">$42.00</p>
+                        <del>$10.00</del>
+                      </div>
+            
+                      <div class="action-buttons">
+                        <button id="btn-37" class="btn-add-cart" data-name="Amazfit GTS 2e Smart Watch" data-price="100"data-quantity="1" data-img="static\assets\images\New Arrivals\Pinkwatch.png">Add to Cart</button>
+                        <button class="btn-buy-now">Buy Now</button>
+                      </div>
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="static/assets/images/New Arrivals/Hasselblad-preview.png" alt="men's leather reversible belt" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title"> 100MP Hasselblad H6D-100c</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Camera</a>
+            
+                      <div class="price-box">
+                        <p class="price">$24.00</p>
+                        <del>$10.00</del>
+                      </div>
+            
+                      <div class="action-buttons">
+                        <button id="btn-38" class="btn-add-cart" data-name="100MP Hasselblad H6D-100c" data-price="100"data-quantity="1" data-img="static\assets\images\New Arrivals\Hasselblad-preview.png">Add to Cart</button>
+                        <button class="btn-buy-now">Buy Now</button>
+                      </div>
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="static/assets/images/New Arrivals/DangbeiProjector.png" alt="platinum zircon classic ring" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Dangbei Neo Smart Projector</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Projector</a>
+            
+                      <div class="price-box">
+                        <p class="price">$62.00</p>
+                        <del>$65.00</del>
+                      </div>
+            
+                      <div class="action-buttons">
+                        <button id="btn-39" class="btn-add-cart" data-name="Dangbei Neo Smart Projector" data-price="100"data-quantity="1" data-img="static\assets\images\New Arrivals\DangbeiProjector.png">Add to Cart</button>
+                        <button class="btn-buy-now">Buy Now</button>
+                      </div>
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="static/assets/images/New Arrivals/pinkipad.jpg" alt="smart watche vital plus" class="showcase-img" width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Aoub Keyboard Case for the iPad 10th Generation</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Accessories</a>
+            
+                      <div class="price-box">
+                        <p class="price">$56.00</p>
+                        <del>$78.00</del>
+                      </div>
+            
+                      <div class="action-buttons">
+                        <button id="btn-40" class="btn-add-cart" data-name="Aoub Keyboard Case for the iPad 10th Generation" data-price="100"data-quantity="1" data-img="static\assets\images\New Arrivals\pinkipad.jpg">Add to Cart</button>
+                        <button class="btn-buy-now">Buy Now</button>
+                      </div>
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="static/assets/images/New Arrivals/Canon Printer.jpg" alt="shampoo conditioner packs" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Canon Pixma MG4250</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Printer</a>
+            
+                      <div class="price-box">
+                        <p class="price">$20.00</p>
+                        <del>$30.00</del>
+                      </div>
+            
+                      <div class="action-buttons">
+                        <button id="btn-41" class="btn-add-cart" data-name="Canon Pixma MG4250" data-price="100"data-quantity="1" data-img="static\assets\images\New Arrivals\Canon Printer.jpg">Add to Cart</button>
+                        <button class="btn-buy-now">Buy Now</button>
+                      </div>
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="static/assets/images/New Arrivals/Acoustic Home_Theater.png" alt="rose gold peacock earrings" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Acoustic Audio AA5102</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Home Theatre</a>
+            
+                      <div class="price-box">
+                        <p class="price">$20.00</p>
+                        <del>$30.00</del>
+                      </div>
+            
+                      <div class="action-buttons">
+                        <button id="btn-42" class="btn-add-cart" data-name="Acoustic Audio AA5102" data-price="100"data-quantity="1" data-img="static\assets\images\New Arrivals\Acoustic Home_Theater.png">Add to Cart</button>
+                        <button class="btn-buy-now">Buy Now</button>
+                      </div>
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+              </div>
+            
+            </div>
+
+          </div>
+
+
+
+          <!--
+            - PRODUCT FEATURED Deal
+          -->
+
+          <div class="product-featured">
+
+            <h2 class="title">Deal of the day</h2>
+
+            <div class="showcase-wrapper has-scrollbar">
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+                  
+                  <div class="showcase-banner">
+                    <img src="static/assets/images/Airpods purple.png" alt="shampoo, conditioner & facewash packs" class="showcase-img">
+                  </div>
+
+                  <div class="showcase-content">
+                    <div class="fav-rate">
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+                    <div class="favorite-btn" id="favorite-btn">
+                      <i class="far fa-heart" id="heart-icon"></i>
+                    </div>
+                  </div>
+                    <a href="#">
+                      <h3 class="showcase-title">Apple AirPods Max Wireless Over-Ear Headphones</h3>
+                    </a>
+
+                    <p class="showcase-desc">
+                      Pro-Level Active Noise Cancellation, Transparency Mode, Personalised Spatial Audio, USB-C Charging, Bluetooth Headphones for iPhone - Grey
+                    </p>
+
+                    <div class="price-box">
+                      <p class="price">₹39,900</p>
+
+                      <del>₹59,900</del>
+                    </div>
+<div class="btn-box">
+  <div id="btn-33" class="btn-add-cart" data-name="Apple AirPods Max Wireless Over-Ear Headphones" data-price="90"data-quantity="0" data-img="static\assets\images\Airpods purple.png">Add to Cart</div>
+                    <button class="add-cart-btn">Buy</button></div>
+
+                    <div class="showcase-status">
+                      <div class="wrapper">
+                        <p>
+                          already sold: <b>20</b>
+                        </p>
+
+                        <p>
+                          available: <b>40</b>
+                        </p>
+                      </div>
+
+                      <div class="showcase-status-bar"></div>
+                    </div>
+
+                    <div class="countdown-box">
+
+                      <p class="countdown-desc">
+                        Hurry Up! Offer ends in:
+                      </p>
+
+                      <div class="countdown">
+
+                        <div class="countdown-content">
+
+                          <p class="display-number">360</p>
+
+                          <p class="display-text">Days</p>
+
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">24</p>
+                          <p class="display-text">Hours</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">59</p>
+                          <p class="display-text">Min</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">00</p>
+                          <p class="display-text">Sec</p>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-container">
+              
+                <div class="showcase">
+              
+                  <div class="showcase-banner">
+                    <img src="static/assets/images/silver flip.png" alt="Rose Gold diamonds Earring" class="showcase-img">
+                  </div>
+              
+                  <div class="showcase-content">
+              
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+              
+                    <h3 class="showcase-title">
+                      <a href="#" class="showcase-title">Samsung Galaxy Z Flip6 </a>
+                    </h3>
+              
+                    <p class="showcase-desc">
+                      5G AI Smartphone (Silver Shadow, 12GB RAM, 256GB Storage)
+                    </p>
+              
+                    <div class="price-box">
+                      <p class="price">₹89,999</p>
+                      <del>₹1,09,998</del>
+                    </div>
+                    <div class="btn-box">
+                      <button id="btn-34" class="btn-add-cart" data-name="Samsung Galaxy Z Flip6" data-price="100"data-quantity="1" data-img="static\assets\images\silver flip.png">Add to Cart</button>
+                      <button class="add-cart-btn">Buy</button></div>
+  
+              
+                    <div class="showcase-status">
+                      <div class="wrapper">
+                        <p> already sold: <b>15</b> </p>
+              
+                        <p> available: <b>40</b> </p>
+                      </div>
+              
+                      <div class="showcase-status-bar"></div>
+                    </div>
+              
+                    <div class="countdown-box">
+              
+                      <p class="countdown-desc">Hurry Up! Offer ends in:</p>
+              
+                      <div class="countdown">
+                        <div class="countdown-content">
+                          <p class="display-number">360</p>
+                          <p class="display-text">Days</p>
+                        </div>
+              
+                        <div class="countdown-content">
+                          <p class="display-number">24</p>
+                          <p class="display-text">Hours</p>
+                        </div>
+              
+                        <div class="countdown-content">
+                          <p class="display-number">59</p>
+                          <p class="display-text">Min</p>
+                        </div>
+              
+                        <div class="countdown-content">
+                          <p class="display-number">00</p>
+                          <p class="display-text">Sec</p>
+                        </div>
+                      </div>
+              
+                    </div>
+              
+                  </div>
+              
+                </div>
+              
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <!--
+            - PRODUCT GRID New Prod
+          -->
+
+          <div class="product-main">
+
+            <h2 class="title">New Products</h2>
+
+            <div class="product-grid">
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+
+                  <img src="static/assets/images/New Products/31.png" alt="Mens Winter Leathers Jackets" width="200" class="product-img default">
+                  <img src="static/assets/images/New Products/32.png" alt="Mens Winter Leathers Jackets" height="10" width="10" class="product-img hover">
+
+                  <p class="showcase-badge">15%</p>
+
+                  <div class="showcase-actions">
+
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase-content">
+
+                  <a href="#" class="showcase-category">VR</a>
+
+                  <a href="#">
+                    <h3 class="showcase-title">Apple Vision Pro headset</h3>
+                  </a>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">$48.00</p>
+                    <del>$75.00</del>
+                  </div>
+                  <div class="action-buttons">
+                    <button id="btn-1" class="btn-add-cart" data-name="Apple Vision Pro headset" data-price="100"data-quantity="1" data-img="static\assets\images\New Products\31.png">Add to Cart</button>
+                    <button class="btn-buy-now">Buy Now</button>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="static/assets/images/New Products/51.jpg" alt="Pure Garment Dyed Cotton Shirt" class="product-img default"
+                    width="100">
+                  <img src="static/assets/images/New Products/52.jpg" alt="Pure Garment Dyed Cotton Shirt" class="product-img hover"
+                    width="100">
+              
+                  <p class="showcase-badge angle black">sale</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Gaming Consoles</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">PS4 Dual sense Edge controller</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$45.00</p>
+                    <del>$56.00</del>
+                  </div>
+                  <div class="action-buttons">
+                    <button id="btn-2" class="btn-add-cart" data-name="APS4 Dual sense Edge controller" data-price="100"data-quantity="1" data-img="static\assets\images\New Products\51.jpg">Add to Cart</button>
+                    <button class="btn-buy-now">Buy Now</button>
+                  </div>
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="static/assets/images/New Products/71.jpg" alt="MEN Yarn Fleece Full-Zip Jacket" class="product-img default"
+                    width="300">
+                  <img src="static/assets/images/New Products/72.jpg" alt="MEN Yarn Fleece Full-Zip Jacket" class="product-img hover"
+                    width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Appliance</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Samsung series 8 Fridge</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$58.00</p>
+                    <del>$65.00</del>
+                  </div>
+                  <div class="action-buttons">
+                    <button id="btn-3" class="btn-add-cart" data-name="Samsung series 8 Fridge" data-price="100"data-quantity="1" data-img="static\assets\images\New Products\71.jpg">Add to Cart</button>
+                    <button class="btn-buy-now">Buy Now</button>
+                  </div>
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="static/assets/images/New Products/131.jpg" alt="Black Floral Wrap Midi Skirt" class="product-img default"
+                    width="50%">
+                  <img src="static/assets/images/New Products/132.jpg" alt="Black Floral Wrap Midi Skirt" class="product-img hover"
+                    width="50%">
+              
+                  <p class="showcase-badge angle pink">new</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Smart Watch</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Samsung Galaxy Watch 4 </a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$25.00</p>
+                    <del>$35.00</del>
+                  </div>
+                  <div class="action-buttons">
+                    <button id="btn-4" class="btn-add-cart" data-name="Samsung Galaxy Watch 4 " data-price="100"data-quantity="1" data-img="static\assets\images\New Products\131.jpg">Add to Cart</button>
+                    <button class="btn-buy-now">Buy Now</button>
+                  </div>
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="static/assets/images/New Products/61.jpg" alt="Casual Men's Brown shoes" class="product-img default"
+                    width="300">
+                  <img src="static/assets/images/New Products/62.jpg" alt="Casual Men's Brown shoes" class="product-img hover"
+                    width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Laptop</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Dell XPS 13 Plus(9320) skins</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$99.00</p>
+                    <del>$105.00</del>
+                  </div>
+                  <div class="action-buttons">
+                    <button id="btn-5" class="btn-add-cart" data-name="Dell XPS 13 Plus(9320) skins " data-price="100"data-quantity="1" data-img="static\assets\images\New Products\61.jpg">Add to Cart</button>
+                    <button class="btn-buy-now">Buy Now</button>
+                  </div>
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="static/assets/images/New Products/91.jpg" alt="Pocket Watch Leather Pouch" class="product-img default"
+                    width="300">
+                  <img src="static/assets/images/New Products/92.jpg" alt="Pocket Watch Leather Pouch" class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle black">sale</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">PC</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">NZXT-H9 Elite ATX Mid Iower Case with Dual Chamber</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$150.00</p>
+                    <del>$170.00</del>
+                  </div>
+                  <div class="action-buttons">
+                    <button id="btn-6" class="btn-add-cart" data-name="NZXT-H9 Elite ATX Mid Iower Case with Dual Chamber " data-price="100"data-quantity="1" data-img="static\assets\images\New Products\91.jpg">Add to Cart</button>
+                    <button class="btn-buy-now">Buy Now</button>
+                  </div>
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="static/assets/images/New Products/101.jpg" alt="Smart watche Vital Plus" class="product-img default"
+                    width="300">
+                  <img src="static/assets/images/New Products/102.jpg" alt="Smart watche Vital Plus" class="product-img hover" width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Appliance</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Samsung 44-Decibel Top Control 24-Built-in Dishwasher</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$100.00</p>
+                    <del>$120.00</del>
+                  </div>
+                  <div class="action-buttons">
+                    <button id="btn-7" class="btn-add-cart" data-name="Samsung 44-Decibel Top Control 24-Built-in Dishwasher" data-price="100"data-quantity="1" data-img="static\assets\images\New Products\101.jpg">Add to Cart</button>
+                    <button class="btn-buy-now">Buy Now</button>
+                  </div>
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="static/assets/images/New Products/121.jpg" alt="Womens Party Wear Shoes" class="product-img default"
+                    width="300">
+                  <img src="static/assets/images/New Products/122.jpg" alt="Womens Party Wear Shoes" class="product-img hover"
+                    width="300">
+              
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Tablet</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Samsung Galaxy TabA9+11 in 64GB Tablet</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$25.00</p>
+                    <del>$30.00</del>
+                  </div>
+                  <div class="action-buttons">
+                    <button id="btn-8" class="btn-add-cart" data-name="Samsung Galaxy TabA9+11 in 64GB Tablet" data-price="100"data-quantity="1" data-img="static\assets\images\New Products\121.jpg">Add to Cart</button>
+                    <button class="btn-buy-now">Buy Now</button>
+                  </div>
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="static/assets/images/New Products/111.jpg" alt="Mens Winter Leathers Jackets" class="product-img default"
+                    width="300">
+                  <img src="static/assets/images/New Products/112.jpg" alt="Mens Winter Leathers Jackets" class="product-img hover"
+                    width="300">
+              
+                    <p class="showcase-badge angle black">sale</p>
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Phone</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Nothing phone 2 5G</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$32.00</p>
+                    <del>$45.00</del>
+                  </div>
+                  <div class="action-buttons">
+                    <button id="btn-9" class="btn-add-cart" data-name="Nothing phone 2 5G" data-price="100"data-quantity="1" data-img="static\assets\images\New Products\111.jpg">Add to Cart</button>
+                    <button class="btn-buy-now">Buy Now</button>
+                  </div>
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="static/assets/images/New Products/141.jpg" alt="Trekking & Running Shoes - black" class="product-img default"
+                    width="300">
+                  <img src="static/assets/images/New Products/142.jpg" alt="Trekking & Running Shoes - black" class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle black">sale</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Gaming console</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Xbox Series S Konsole</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$58.00</p>
+                    <del>$64.00</del>
+                  </div>
+                  <div class="action-buttons">
+                    <button id="btn-10" class="btn-add-cart" data-name="Xbox Series S Konsole" data-price="100"data-quantity="1" data-img="static\assets\images\New Products\141.jpg">Add to Cart</button>
+                    <button class="btn-buy-now">Buy Now</button>
+                  </div>
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="static/assets/images/New Products/151.jpg" alt="Men's Leather Formal Wear shoes" class="product-img default"
+                    width="300">
+                  <img src="static/assets/images/New Products/152.jpg" alt="Men's Leather Formal Wear shoes" class="product-img hover"
+                    width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Appliance</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Air Conditioning Cecotec AirClima 9000 Smartfresh Split</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$50.00</p>
+                    <del>$65.00</del>
+                  </div>
+                  <div class="action-buttons">
+                    <button id="btn-11" class="btn-add-cart" data-name="Air Conditioning Cecotec AirClima 9000 Smartfresh Split" data-price="100"data-quantity="1" data-img="static\assets\images\New Products\151.jpg">Add to Cart</button>
+                    <button class="btn-buy-now">Buy Now</button>
+                  </div>
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="static/assets/images/New Products/171.jpg" alt="Better Basics French Terry Sweatshorts"
+                    class="product-img default" width="300">
+                  <img src="static/assets/images/New Products/172.jpg" alt="Better Basics French Terry Sweatshorts"
+                    class="product-img hover" width="300">
+              
+                  <p class="showcase-badge angle black">sale</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Microphone</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Rod NT1 Kit Condenser Microphone</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$78.00</p>
+                    <del>$85.00</del>
+                  </div>
+                  <div class="action-buttons">
+                    <button id="btn-12" class="btn-add-cart" data-name="Rod NT1 Kit Condenser Microphone" data-price="100"data-quantity="1" data-img="static\assets\images\New Products\171.jpg">Add to Cart</button>
+                    <button class="btn-buy-now">Buy Now</button>
+                  </div>
+                </div>
+              
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - TESTIMONIALS, CTA & SERVICE
+    -->
+
+    <div>
+
+      <div class="container">
+
+        <div class="testimonials-box">
+
+          <!--
+            - TESTIMONIALS
+          -->
+
+          <div class="testimonial">
+
+            <h2 class="title">testimonial</h2>
+
+            <div class="testimonial-card">
+
+              <img src="static/assets/images/testimonial-1.jpeg" alt="alan doe" class="testimonial-banner" width="80" height="80">
+
+              <p class="testimonial-name">Shruthi Traders</p>
+
+              <p class="testimonial-title">CEO & Founder Invision</p>
+
+              <img src="static/assets/images/icons/quotes.svg" alt="quotation" class="quotation-img" width="26">
+
+              <p class="testimonial-desc">
+                "Refurbity made it easy for us to reach more buyers and sell quality refurbished electronics—truly a GAME-CHANGER!"
+              </p>
+
+            </div>
+
+          </div>
+
+
+
+          <!--
+            - CTA
+          -->
+
+          <div class="cta-container">
+
+            <img src="static/assets/images/cta-banner.jpg" alt="summer collection" class="cta-banner">
+
+            <a href="#" class="cta-content">
+
+              <p class="discount">25% Discount</p>
+
+              <h2 class="cta-title">Diwali offer</h2>
+
+              <p class="cta-text">Starting @ ₹4,999</p>
+
+              <button class="cta-btn">Shop now</button>
+
+            </a>
+
+          </div>
+
+
+
+          <!--
+            - SERVICE
+          -->
+
+          <div class="service">
+
+            <h2 class="title">Our Services</h2>
+
+            <div class="service-container">
+
+              <a href="#" class="service-item">
+
+                <div class="service-icon">
+                  <ion-icon name="boat-outline"></ion-icon>
+                </div>
+
+                <div class="service-content">
+
+                  <h3 class="service-title">Trustable Dealers</h3>
+                  <p class="service-desc">License verified</p>
+
+                </div>
+
+              </a>
+
+              <a href="#" class="service-item">
+              
+                <div class="service-icon">
+                  <ion-icon name="rocket-outline"></ion-icon>
+                </div>
+              
+                <div class="service-content">
+              
+                  <h3 class="service-title">Top Brand</h3>
+                  <p class="service-desc">Ensured Quality</p>
+              
+                </div>
+              
+              </a>
+
+              <a href="#" class="service-item">
+              
+                <div class="service-icon">
+                  <ion-icon name="call-outline"></ion-icon>
+                </div>
+              
+                <div class="service-content">
+              
+                  <h3 class="service-title">Best Online Support</h3>
+                  <p class="service-desc">24x7</p>
+              
+                </div>
+              
+              </a>
+
+              <a href="#" class="service-item">
+              
+                <div class="service-icon">
+                  <ion-icon name="arrow-undo-outline"></ion-icon>
+                </div>
+              
+                <div class="service-content">
+              
+                  <h3 class="service-title">Return Policy</h3>
+                  <p class="service-desc">Easy & Free Return</p>
+              
+                </div>
+              
+              </a>
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - BLOG
+    -->
+
+
+  </main>
+
+
+
+
+
+  <!--
+    - FOOTER
+  -->
+
+  <footer>
+
+    <div class="footer-category">
+
+      <div class="container">
+
+        <h2 class="footer-category-title">Brand directory</h2>
+
+        <div class="footer-category-box">
+
+          <h3 class="category-box-title">iPhones :</h3>
+
+          <a href="#" class="footer-category-link">iPhone 14</a>
+          <a href="#" class="footer-category-link">iPhone 13</a>
+          <a href="#" class="footer-category-link">iPhone 12</a>
+          <a href="#" class="footer-category-link">iPhone 11</a>
+          <a href="#" class="footer-category-link">iPhone SE(2022)</a>
+          <a href="#" class="footer-category-link">iPhone X</a>
+          <a href="#" class="footer-category-link">iPhone XR</a>
+          <a href="#" class="footer-category-link">See all</a>
+
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Samsung Galaxy :</h3>
+        
+          <a href="#" class="footer-category-link">Galaxy S23 Series</a>
+          <a href="#" class="footer-category-link">Galaxy S22 Series</a>
+          <a href="#" class="footer-category-link">Galaxy S21 Series</a>
+          <a href="#" class="footer-category-link">Galaxy Note Series</a>
+          <a href="#" class="footer-category-link">Galaxy Z Fold Series</a>
+          <a href="#" class="footer-category-link">Galaxy Z Flip Seriess</a>
+          <a href="#" class="footer-category-link">See All</a>
+         
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Google Pixel :</h3>
+        
+          <a href="#" class="footer-category-link">Google Pixel 7 Series</a>
+          <a href="#" class="footer-category-link">Google Pixel 6 Series</a>
+          <a href="#" class="footer-category-link">Google Pixel 5 Series</a>
+          <a href="#" class="footer-category-link">Google Pixel 4 Series</a>
+          <a href="#" class="footer-category-link">See All</a>
+         
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">More Brands :</h3>
+        
+          <a href="#" class="footer-category-link">One Plus</a>
+          <a href="#" class="footer-category-link">Motorola</a>
+          <a href="#" class="footer-category-link">Nokia</a>
+          <a href="#" class="footer-category-link">Oppo</a>
+          <a href="#" class="footer-category-link">Redmi</a>
+          <a href="#" class="footer-category-link">Xiami</a>
+          <a href="#" class="footer-category-link">Realme</a>
+          <a href="#" class="footer-category-link">See All</a>
+          
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">MacBook :</h3>
+        
+          <a href="#" class="footer-category-link">MacBook Pro</a>
+          <a href="#" class="footer-category-link">MacBook Air</a>
+          <a href="#" class="footer-category-link">MacBook</a>
+          <a href="#" class="footer-category-link">MacBook M1 series</a>
+          <a href="#" class="footer-category-link">MacBook M2 series</a>
+          <a href="#" class="footer-category-link">See all</a>
+          
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Windows laptops :</h3>
+        
+          <a href="#" class="footer-category-link">Acer</a>
+          <a href="#" class="footer-category-link">Dell</a>
+          <a href="#" class="footer-category-link">HP</a>
+          <a href="#" class="footer-category-link">Lenova</a>
+          <a href="#" class="footer-category-link">Samsung</a>
+          <a href="#" class="footer-category-link">Toshiba</a>
+          <a href="#" class="footer-category-link">See All</a>
+          
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">iPad :</h3>
+        
+          <a href="#" class="footer-category-link">iPad Air series</a>
+          <a href="#" class="footer-category-link">iPad Pro series</a>
+          <a href="#" class="footer-category-link">iPad Mini series</a>
+          <a href="#" class="footer-category-link">iPad series</a>
+          <a href="#" class="footer-category-link">See All</a>
+               
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Samsung Galaxy Tab :</h3>
+        
+          <a href="#" class="footer-category-link">Galaxy Tab S Series</a>
+          <a href="#" class="footer-category-link">Galaxy Tab A Series</a>
+          <a href="#" class="footer-category-link">Galaxy Tab E Series</a>
+          <a href="#" class="footer-category-link">See All</a>
+          
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Xbox :</h3>
+        
+          <a href="#" class="footer-category-link">Xbox One</a>
+          <a href="#" class="footer-category-link">Xbox One S</a>
+          <a href="#" class="footer-category-link">Xbox One X</a>
+          <a href="#" class="footer-category-link">Xbox Series S</a>
+          <a href="#" class="footer-category-link">Xbox Series X</a>
+          <a href="#" class="footer-category-link">See All</a>
+               
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Nintendo :</h3>
+        
+          <a href="#" class="footer-category-link">Nintendo Switch</a>
+          <a href="#" class="footer-category-link">Nintendo Wii</a>
+          <a href="#" class="footer-category-link">Nintendo 3Ds</a>
+          <a href="#" class="footer-category-link">Nintendo Game Boy</a>
+          <a href="#" class="footer-category-link">See All</a>
+               
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">PlayStation :</h3>
+        
+          <a href="#" class="footer-category-link">PlayStation 5</a>
+          <a href="#" class="footer-category-link">PlayStation 4</a>
+          <a href="#" class="footer-category-link">PlayStation 3</a>
+          <a href="#" class="footer-category-link">PSP</a>
+          <a href="#" class="footer-category-link">See All</a>
+               
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Apple Watch :</h3>
+        
+          <a href="#" class="footer-category-link">Apple watch series 8</a>
+          <a href="#" class="footer-category-link">Apple watch series 7</a>
+          <a href="#" class="footer-category-link">Apple watch series 6</a>
+          <a href="#" class="footer-category-link">Apple watch series 5</a>
+          <a href="#" class="footer-category-link">Apple watch SE series</a>
+          <a href="#" class="footer-category-link">Apple watch Ultra</a>
+          <a href="#" class="footer-category-link">See All</a>
+               
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">More Brands :</h3>
+        
+          <a href="#" class="footer-category-link">Galaxy Watch</a>
+          <a href="#" class="footer-category-link">Google</a>
+          <a href="#" class="footer-category-link">Fitbit</a>
+          <a href="#" class="footer-category-link">Amazfit</a>
+          <a href="#" class="footer-category-link">See All</a>
+          </div>
+          <div class="footer-category-box">
+            <h3 class="category-box-title">Airpods :</h3>
+          
+            <a href="#" class="footer-category-link">Airpods series</a>
+            <a href="#" class="footer-category-link">Airpods Pro series</a>
+            <a href="#" class="footer-category-link">Airpods Max series</a>
+            <a href="#" class="footer-category-link">Airpods Replacement</a>
+            <a href="#" class="footer-category-link">HomePod</a>
+            <a href="#" class="footer-category-link">See All</a>     
+          </div>
+          
+          <div class="footer-category-box">
+            <h3 class="category-box-title">Earphones :</h3>
+          
+            <a href="#" class="footer-category-link">Bose</a>
+            <a href="#" class="footer-category-link">Plantronics</a>
+            <a href="#" class="footer-category-link">Samsung</a>
+            <a href="#" class="footer-category-link">Others</a>
+            <a href="#" class="footer-category-link">See All</a>
+                 
+          </div>
+          
+          <div class="footer-category-box">
+            <h3 class="category-box-title">Headphones :</h3>
+          
+            <a href="#" class="footer-category-link">AKG</a>
+            <a href="#" class="footer-category-link">Bose</a>
+            <a href="#" class="footer-category-link">Jabra</a>
+            <a href="#" class="footer-category-link">JBL</a>
+            <a href="#" class="footer-category-link">Skull Candy</a>
+            <a href="#" class="footer-category-link">See All</a>
+                 
+          </div>
+
+          <div class="footer-category-box">
+            <h3 class="category-box-title">Speakers :</h3>
+          
+            <a href="#" class="footer-category-link">Amazon Alexa</a>
+            <a href="#" class="footer-category-link">Bose</a>
+            <a href="#" class="footer-category-link">Marshall</a>
+            <a href="#" class="footer-category-link">JBL</a>
+            <a href="#" class="footer-category-link">Ultimate Ears</a>
+            <a href="#" class="footer-category-link">See All</a>
+                 
+          </div>
+               
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="footer-nav">
+
+      <div class="container">
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Follow Us</h2>
+          </li>
+
+          <li>
+            <ul class="social-link">
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <img src="static/assets/images/twitter-x.svg" alt="twitter" class="twitter">
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Products</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Brands</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Best Sellers & New Arrivals</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Trending & Top Rated</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Deal of the Day</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Testimonials</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Brand Directory</a>
+          </li>
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Our Team</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Disha S</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Hirthick S</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Sundhareshwaran R</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Shruthi M</a>
+          </li>
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Contact</h2>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <address class="content">
+              SNS Kalvi Nagar, Sathy Main Road, 
+              Kurumbapalayam, PO, Coimbatore, 
+              Tamil Nadu 641107
+            </address>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <a href="tel:+918015531830" class="footer-nav-link">+91 80155  31830</a> <br><br>
+            <a href="tel:+917904923835" class="footer-nav-link">+91 79049  23835</a>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <a href="mailto:refurbity.official@gamil.com" class="footer-nav-link">refurbity.official@gmail.com</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Follow Us</h2>
+          </li>
+
+          <li>
+            <ul class="social-link">
+
+              <li class="footer-nav-item">
+                <a href="https://www.facebook.com/share/TDZ5vUGerE2A8cWm/" class="footer-nav-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="https://x.com/Refurbity_7?t=VgjhXR9jEVh3hELizo0apA&s=08" class="footer-nav-link">
+                  <img src="static/assets/images/twitter-x.svg" alt="twitter" class="twit"> 
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="https://www.linkedin.com/in/refurbity-marketplace-7a9260334?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="footer-nav-link">
+                  <img src="static/assets/images/twitter-x.svg" alt="twitter">
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="https://www.instagram.com/refurbity/profilecard/?igsh=MXc4ejVkM2dnaHo2Zg==" class="footer-nav-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <div class="container">
+
+        <img src="static/assets/images/payment.png" alt="payment method" class="payment-img">
+
+        <p class="copyright">
+          Copyright &copy; <a href="#">Refurbity</a> all rights reserved.
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="static/assets/js/script.js"></script>
+  <script src="static/assets/js/cart.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+ 
+
+  <script src="static/assets/js/products.js"></script>
+  <script src="static/assets/js/search.js"></script>
+</body>
+
+</html>
